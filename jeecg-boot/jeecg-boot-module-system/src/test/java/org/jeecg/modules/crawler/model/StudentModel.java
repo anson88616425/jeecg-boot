@@ -18,7 +18,7 @@ import java.util.Map;
  */
 public class StudentModel {
 
-    public static String Cookie="gr_user_id=cc14dfb9-7c09-4cdb-b547-555d5db950d6; grwng_uid=91229acb-e943-4eab-a98c-0d780e6a3bdc; 94bcc04a1f422cef_gr_last_sent_cs1=3140101052054467; 94bcc04a1f422cef_gr_session_id=692ddf79-485b-4a8e-bd7e-173ad5935bb8; 94bcc04a1f422cef_gr_last_sent_sid_with_cs1=692ddf79-485b-4a8e-bd7e-173ad5935bb8; PHPSESSID=7q3ot85i9jc7kcjfm02i4v35f6; 94bcc04a1f422cef_gr_session_id_692ddf79-485b-4a8e-bd7e-173ad5935bb8=true; 94bcc04a1f422cef_gr_cs1=3140101052054467";
+    public static String Cookie="gr_user_id=cc14dfb9-7c09-4cdb-b547-555d5db950d6; grwng_uid=91229acb-e943-4eab-a98c-0d780e6a3bdc; 94bcc04a1f422cef_gr_last_sent_cs1=3140101052054467; 94bcc04a1f422cef_gr_session_id=7b466791-7b3c-4707-aac4-d8a8b2cf1447; 94bcc04a1f422cef_gr_last_sent_sid_with_cs1=7b466791-7b3c-4707-aac4-d8a8b2cf1447; 94bcc04a1f422cef_gr_session_id_7b466791-7b3c-4707-aac4-d8a8b2cf1447=true; PHPSESSID=t6i71ffl5sji0hppfc5ston9am; 94bcc04a1f422cef_gr_cs1=3140101052054467";
 
 
     @ExtractBy(type = ExtractBy.Type.JsonPath, value = "$..user_id", source = ExtractBy.Source.RawText)

@@ -30,10 +30,16 @@ public class EffectiveLearningReportResponseModel {
     private String finishDay;
 
     /**
-     * 学习前
+     * 学前掌握程度
      */
-    @ExtractBy(type = ExtractBy.Type.JsonPath, value = "$..testMasterRate", source = ExtractBy.Source.RawText)
-    private String studyBefore;
+    @ExtractBy(type = ExtractBy.Type.JsonPath, value = "$..masterRate", source = ExtractBy.Source.RawText)
+    private String studeyBeforeMaster;
+
+    /**
+     * 学习前正确率
+     */
+    @ExtractBy(type = ExtractBy.Type.JsonPath, value = "$..answerRate.rightRate", source = ExtractBy.Source.RawText)
+    private String studyBeforeRight;
 
     /**
      * 学习后

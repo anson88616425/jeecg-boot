@@ -57,10 +57,13 @@ public class SquirrelStudentReport implements Serializable {
     @DateTimeFormat(pattern="yyyy-MM-dd")
     @ApiModelProperty(value = "完成日期")
     private Date finishDay;
+    @Excel(name = "学前掌握程度", width = 15)
+    @ApiModelProperty(value = "学前掌握程度")
+    private String studeyBeforeMaster;
 	/**学习前*/
-	@Excel(name = "学习前", width = 15)
-    @ApiModelProperty(value = "学习前")
-    private String studyBefore;
+	@Excel(name = "学习前掌握率", width = 15)
+    @ApiModelProperty(value = "学习前掌握率")
+    private String studyBeforeRight;
 	/**学习后*/
 	@Excel(name = "学习后", width = 15)
     @ApiModelProperty(value = "学习后")

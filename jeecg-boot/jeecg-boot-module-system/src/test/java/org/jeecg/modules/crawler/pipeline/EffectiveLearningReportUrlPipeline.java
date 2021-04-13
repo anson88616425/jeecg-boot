@@ -34,8 +34,10 @@ public class EffectiveLearningReportUrlPipeline implements PageModelPipeline<Eff
 
     @Override
     public void process(EffectiveLearningReportUrlModel o, Task task) {
+        List<String> list0=o.getReportUrlList0().stream().filter(a->!a.equals("")).collect(Collectors.toList());
         List<String> list=o.getReportUrlList().stream().filter(a->!a.equals("")).collect(Collectors.toList());
-        for(String l:list) {
+        list0.addAll(list);
+        for(String l:list0) {
             String replaceBefore=l;
             //替换
             if(l.indexOf("https://mmath.classba.cn/report")>=0) {
