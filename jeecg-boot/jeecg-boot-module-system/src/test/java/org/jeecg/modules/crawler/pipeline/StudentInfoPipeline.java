@@ -32,7 +32,7 @@ public class StudentInfoPipeline implements PageModelPipeline<StudentInfoModel> 
         List<String> learnTypeList=o.getLearnType();
         List<String> courseVersionList=o.getCourseVersion();
         for(int i=0;i<courseIdList.size();i++) {
-            if(!learnTypeList.get(i).equals("1")&&!courseVersionList.get(i).equals("10")) {
+            if(!learnTypeList.get(i).equals("1")&&!courseVersionList.get(i).equals("10")||(learnTypeList.get(i).equals("1")&&courseVersionList.get(i).equals("2"))){
                 Request request = new Request("https://teacher.classba.cn/api/report/studentReportList");
                 request.setMethod(HttpConstant.Method.POST);
                 Site site= Site.me().setRetryTimes(3).setSleepTime(1000).setTimeOut(10000)
